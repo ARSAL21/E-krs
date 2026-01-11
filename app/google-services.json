@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698779723378",
+    "project_id": "siam-firebase",
+    "storage_bucket": "siam-firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698779723378:android:78bf615674f82dc1e684eb",
+        "android_client_info": {
+          "package_name": "com.example.e_krs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYMaQrRVLxFRH3D_ounha9VGpNpaGyxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
