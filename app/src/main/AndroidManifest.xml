@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_krs">
+
+    <application
+        android:allowBackup="true"
+        android:label="E-KRS"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".KrsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".KrsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".JadwalActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".NilaiActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

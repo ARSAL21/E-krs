@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Dokumen -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,2h9l5,5v15c0,1.1 -0.9,2 -2,2H6c-1.1,0 -2,-0.9 -2,-2V4c0,-1.1 0.9,-2 2,-2z"/>
+
+    <!-- Grafik Nilai -->
+    <path
+        android:fillColor="#1F3FB5"
+        android:pathData="M9,17h2v-5H9v5zm4,0h2v-8h-2v8zm4,0h2v-3h-2v3z"/>
+</vector>
