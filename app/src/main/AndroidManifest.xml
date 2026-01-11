@@ -6,7 +6,20 @@
         android:allowBackup="true"
         android:label="E-KRS"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        android:theme="@style/Theme.EKRS">
+
+    <activity
+            android:name=".NilaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KrsActivity"
+            android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
@@ -21,25 +34,13 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".KrsActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ProfilActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".KrsActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".JadwalActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".NilaiActivity"
-            android:exported="false"/>
+            android:exported="false" />
 
     </application>
 

@@ -8,21 +8,19 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.card.MaterialCardView;
 
-public class HomeActivity extends AppCompatActivity {
+public class JadwalActivity extends AppCompatActivity {
 
-    MaterialCardView menuKrs, menuJadwal, menuNilai, menuProfil;
     BottomNavigationView bottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_jadwal);
 
-        // ===== HANDLE WINDOW INSETS =====
+        // HANDLE WINDOW INSETS
         ViewCompat.setOnApplyWindowInsetsListener(
-                findViewById(R.id.rootHome),
+                findViewById(R.id.rootJadwal),
                 (v, insets) -> {
                     v.setPadding(
                             insets.getInsets(WindowInsetsCompat.Type.systemBars()).left,
@@ -33,30 +31,7 @@ public class HomeActivity extends AppCompatActivity {
                     return insets;
                 });
 
-        // ===== INIT GRID MENU =====
-        menuKrs = findViewById(R.id.menuKrs);
-        menuJadwal = findViewById(R.id.menuJadwal);
-        menuNilai = findViewById(R.id.menuNilai);
-        menuProfil = findViewById(R.id.menuProfil);
-
-        // ===== GRID INTENT =====
-        menuKrs.setOnClickListener(v ->
-                startActivity(new Intent(this, KrsActivity.class))
-        );
-
-        menuJadwal.setOnClickListener(v ->
-                startActivity(new Intent(this, JadwalActivity.class))
-        );
-
-        menuNilai.setOnClickListener(v ->
-                startActivity(new Intent(this, NilaiActivity.class))
-        );
-
-        menuProfil.setOnClickListener(v ->
-                startActivity(new Intent(this, ProfileActivity.class))
-        );
-
-        // ===== BOTTOM NAV =====
+        // INIT BOTTOM NAV
         bottomNav = findViewById(R.id.bottomNav);
         bottomNav.setSelectedItemId(R.id.nav_home);
 
